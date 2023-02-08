@@ -1,0 +1,16 @@
+Step 1 create a container 
+docker run  -e MYSQL_ROOT_PASSWORD=123 -d mysql:8  
+
+Step:2 mysql command
+Docker exec (4 letters id) mysql --version
+
+Step:3 command show databases
+Docker exec -it (letters idtext) mysql -uroot -p123 
+
+Step:4 interact with native terminal
+Mysql> show databases;
+Mysql> create database test1;
+Mysql>  INSERT INTO test1 (name, email, phone, status) VALUES (‘Learn Blogging’, ‘blog@gmail.com’, ‘7418529630’, 1);
+Mysql> SELECT 2+2;
+Mysql> CURDATE();
+
